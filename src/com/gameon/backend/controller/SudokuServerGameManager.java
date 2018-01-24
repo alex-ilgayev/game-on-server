@@ -1,24 +1,26 @@
 package com.gameon.backend.controller;
 
-import com.gameon.gameon.datatypes.Client;
-import com.gameon.gameon.datatypes.DifficultyType;
-import com.gameon.gameon.datatypes.GameType;
-import com.gameon.gameon.datatypes.Session;
-import com.gameon.gameon.messaging.MessageRequestAvailableClients;
-import com.gameon.gameon.messaging.MessageRequestJoin;
-import com.gameon.gameon.messaging.MessageRequestNewGame;
-import com.gameon.gameon.messaging.MessageRequestSetMove;
-import com.gameon.gameon.messaging.MessageRequestSms;
-import com.gameon.gameon.messaging.MessageResponseSession;
-import com.gameon.gameon.sudoku.datatypes.SudokuMove;
-import com.gameon.gameon.sudoku.datatypes.SudokuResultType;
-import com.gameon.gameon.sudoku.SudokuGameData;
-import com.gameon.gameon.messaging.MessageCompression;
-import com.gameon.gameon.messaging.MessageResponseSms;
-import com.gameon.gameon.messaging.MessageResponseClientList;
-import com.gameon.backend.networkingtypes.Packet;
+import com.gameon.shared.datatypes.Client;
+import com.gameon.shared.datatypes.DifficultyType;
+import com.gameon.shared.datatypes.GameType;
+import com.gameon.shared.datatypes.Session;
+import com.gameon.shared.messaging.MessageRequestAvailableClients;
+import com.gameon.shared.messaging.MessageRequestJoin;
+import com.gameon.shared.messaging.MessageRequestNewGame;
+import com.gameon.shared.messaging.MessageRequestSetMove;
+import com.gameon.shared.messaging.MessageRequestSms;
+import com.gameon.shared.messaging.MessageResponseSession;
+import com.gameon.shared.sudoku.datatypes.SudokuMove;
+import com.gameon.shared.sudoku.datatypes.SudokuResultType;
+import com.gameon.shared.sudoku.SudokuGameData;
+import com.gameon.shared.messaging.MessageCompression;
+import com.gameon.shared.messaging.MessageResponseSms;
+import com.gameon.shared.messaging.MessageResponseClientList;
+import com.gameon.shared.datatypes.Packet;
 
+import java.util.Base64;
 import java.util.UUID;
+import java.util.logging.Logger;
 
 /**
  * Created by Alex on 4/28/2015.
@@ -26,6 +28,7 @@ import java.util.UUID;
  * Managing all the incoming sudoku messages, and returns messages/interacts with DB.
  */
 public class SudokuServerGameManager {
+    private final static Logger LOGGER = Logger.getLogger("SudokuServerGameManager");
     private static SudokuServerGameManager _ins = null;
 
     private SudokuServerGameManager(){
@@ -56,7 +59,7 @@ public class SudokuServerGameManager {
 
         Packet p = new Packet();
         p.date = System.currentTimeMillis();
-        p.payload = MessageCompression.getInstance().compress(returnMsg);
+        p.payload = Base64.getEncoder().encodeToString(MessageCompression.getInstance().compress(returnMsg));
 
         MessageQueues.getInstance().addPacket(requestingClient, p);
     }
@@ -75,7 +78,7 @@ public class SudokuServerGameManager {
 
         Packet p = new Packet();
         p.date = System.currentTimeMillis();
-        p.payload = MessageCompression.getInstance().compress(returnMsg);
+        p.payload = Base64.getEncoder().encodeToString(MessageCompression.getInstance().compress(returnMsg));
 
         MessageQueues.getInstance().addPacket(requestingClient, p);
     }
@@ -92,8 +95,7 @@ public class SudokuServerGameManager {
             //TODO: what to do ?
         }
         else {
-            //TODO:
-            System.out.println("it is success");
+            LOGGER.info("submitted successful move");
         }
     }
 
@@ -111,14 +113,12 @@ public class SudokuServerGameManager {
         session = TemporaryDB.getInstance().findSession(gameId);
         if(session == null)
             return;
-        //TODO:
-        System.out.println("about to post text message to session " + session.getSessionId());
+        LOGGER.info("about to post text message to session " + session.getSessionId());
         for(Client client: session.getClientList()) {
             if(client.equals(clientExcluded))
                 continue;
 
-            //TODO:
-            System.out.println("about to post text message to client " + client.getId());
+            LOGGER.info("about to post text message to client " + client.getId());
 
             MessageResponseSms returnMsg = new MessageResponseSms();
             returnMsg.responseClient = client;
@@ -128,7 +128,7 @@ public class SudokuServerGameManager {
 
             Packet p = new Packet();
             p.date = System.currentTimeMillis();
-            p.payload = MessageCompression.getInstance().compress(returnMsg);
+            p.payload = Base64.getEncoder().encodeToString(MessageCompression.getInstance().compress(returnMsg));
 
             MessageQueues.getInstance().addPacket(client, p);
         }
@@ -153,7 +153,7 @@ public class SudokuServerGameManager {
 
         Packet p = new Packet();
         p.date = System.currentTimeMillis();
-        p.payload = MessageCompression.getInstance().compress(sessionMsg);
+        p.payload = Base64.getEncoder().encodeToString(MessageCompression.getInstance().compress(sessionMsg));
 
         MessageQueues.getInstance().addPacket(requestingClient, p);
     }

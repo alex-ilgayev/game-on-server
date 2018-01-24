@@ -10,7 +10,6 @@ public class Settings {
 
     // the post parameter name for the main servlet post request.
     public final static String SERVLET_PACKET_PAYLOAD_PARAMETER_NAME = "Payload";
-
     public final static String SERVLET_PACKET_DATE_PARAMETER_NAME = "Date";
 
     public final static String CHAT_SYSTEM_PREFIX = "System: ";
@@ -21,9 +20,6 @@ public class Settings {
     // means when we will be cleaning queues, any unupdated client by the following time,
     // will be deleted.
     public final static int _TIME_TO_DELETE_CLIENT_MILLIS = 8000;
-
-    public final static String NO_PACKET_PAYLOAD_INCLUDED_ERROR = "no 'Payload' parameter included";
-    public final static String NO_PACKET_DATE_INCLUDED_ERROR = "no 'Date' parameter included";
 
     private Settings(){
 

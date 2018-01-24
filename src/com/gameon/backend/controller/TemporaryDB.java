@@ -1,7 +1,7 @@
 package com.gameon.backend.controller;
 
-import com.gameon.gameon.datatypes.Client;
-import com.gameon.gameon.datatypes.Session;
+import com.gameon.shared.datatypes.Client;
+import com.gameon.shared.datatypes.Session;
 
 
 import java.util.LinkedList;

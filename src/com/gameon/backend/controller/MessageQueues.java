@@ -1,16 +1,13 @@
 package com.gameon.backend.controller;
 
-import com.gameon.gameon.datatypes.Client;
-import com.gameon.backend.networkingtypes.Packet;
-import com.gameon.gameon.datatypes.Session;
-import com.gameon.gameon.messaging.MessageCompression;
-import com.gameon.gameon.messaging.MessageResponseSession;
+import com.gameon.shared.datatypes.Client;
+import com.gameon.shared.datatypes.Packet;
+import com.gameon.shared.datatypes.Session;
+import com.gameon.shared.messaging.MessageCompression;
+import com.gameon.shared.messaging.MessageResponseSession;
 
-import java.util.Hashtable;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.Map;
-import java.util.UUID;
+import java.util.*;
+import java.util.logging.Logger;
 
 /**
  * Created by Alex on 4/28/2015.
@@ -19,6 +16,7 @@ import java.util.UUID;
  * The client will be polling the server for available messages any moment.
  */
 public class MessageQueues {
+    private final static Logger LOGGER = Logger.getLogger("MessageQueues");
 
     // map from client id to relevant client queue.
     private Hashtable<Integer, LinkedList<Packet>> _queues;
@@ -60,7 +58,7 @@ public class MessageQueues {
 
     public void addPacket(Client client, Packet packet){
         if(!_queues.containsKey(client.getId())) {
-            System.err.println("unrecognized user");
+            LOGGER.severe(ErrorStrings.SERVER_ERROR_PACKET_FROM_UNRECOGNIZED_USER);
             return;
         }
         _queues.get(client.getId()).addLast(packet);
@@ -89,7 +87,7 @@ public class MessageQueues {
 
                 Packet p = new Packet();
                 p.date = System.currentTimeMillis();
-                p.payload = MessageCompression.getInstance().compress(returnMsg);
+                p.payload = Base64.getEncoder().encodeToString(MessageCompression.getInstance().compress(returnMsg));
                 MessageQueues.getInstance().addPacket(client, p);
             }
 
@@ -103,8 +101,6 @@ public class MessageQueues {
     }
 
     public void removeOldQueues(){
-        //TODO
-        System.out.println("removing old queues");
         long currTime = System.currentTimeMillis();
         for(Iterator it = _queues.entrySet().iterator(); it.hasNext();){
             Map.Entry pair = (Map.Entry) it.next();
@@ -114,8 +110,7 @@ public class MessageQueues {
                 Client client = TemporaryDB.getInstance().findClient(clientId);
                 if(client != null)
                     TemporaryDB.getInstance().removeClient(client);
-                //TODO
-                System.out.println("removing client.");
+                LOGGER.info("removed client through old queue removing");
             } else {
                 if((currTime - _timeStampMap.get(clientId)) > Settings._TIME_TO_DELETE_CLIENT_MILLIS) {
                     _timeStampMap.remove(clientId);
@@ -123,8 +118,7 @@ public class MessageQueues {
                     Client client = TemporaryDB.getInstance().findClient(clientId);
                     if(client != null)
                         TemporaryDB.getInstance().removeClient(client);
-                    //TODO
-                    System.out.println("removing client.");
+                    LOGGER.info("removed client through old queue removing");
                 }
             }
         }

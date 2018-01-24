@@ -1,18 +1,18 @@
 package com.gameon.backend.controller;
 
-import com.gameon.backend.networkingtypes.Packet;
-import com.gameon.gameon.datatypes.Client;
-import com.gameon.gameon.datatypes.Session;
-import com.gameon.gameon.messaging.MessageCompression;
-import com.gameon.gameon.messaging.IMessage;
-import com.gameon.gameon.messaging.MessageRequestAvailableClients;
-import com.gameon.gameon.messaging.MessageRequestJoin;
-import com.gameon.gameon.messaging.MessageRequestNewGame;
-import com.gameon.gameon.messaging.MessageRequestPollMessageQueue;
-import com.gameon.gameon.messaging.MessageRequestSetMove;
-import com.gameon.gameon.messaging.MessageRequestSms;
+import com.gameon.shared.datatypes.Packet;
+import com.gameon.shared.datatypes.Client;
+import com.gameon.shared.datatypes.Session;
+import com.gameon.shared.messaging.IMessage;
+import com.gameon.shared.messaging.MessageRequestAvailableClients;
+import com.gameon.shared.messaging.MessageRequestJoin;
+import com.gameon.shared.messaging.MessageRequestNewGame;
+import com.gameon.shared.messaging.MessageRequestPollMessageQueue;
+import com.gameon.shared.messaging.MessageRequestSetMove;
+import com.gameon.shared.messaging.MessageRequestSms;
 
 import java.util.LinkedList;
+import java.util.logging.Logger;
 
 /**
  * Created by Alex on 4/28/2015.
@@ -21,6 +21,7 @@ import java.util.LinkedList;
  * function in SudokuServerGameManager.
  */
 public class SudokuMessageHandler {
+    private final static Logger LOGGER = Logger.getLogger("SudokuMessageHandler");
     private static long _LAST_TIME_CLEANED_QUEUES = System.currentTimeMillis();
 
     private static SudokuMessageHandler _ins = null;
@@ -35,11 +36,9 @@ public class SudokuMessageHandler {
         return _ins;
     }
 
-    public Packet[] handleMessage(byte[] payload, long date){
-        IMessage msg = MessageCompression.getInstance().decompress(payload);
+    public Packet[] handleMessage(IMessage msg){
         // creating new client in required lists.
-        //TODO
-        System.out.println("handling message number: " + msg.getMessageType());
+        LOGGER.info("handling message number: " + msg.getMessageType());
         cleanQueues();
         handleClient(msg.getClient());
         // clean queues once a while. when someone polling clean queues after polling (not to lose messages)
@@ -67,7 +66,7 @@ public class SudokuMessageHandler {
             }
             // INSERT TO DB.
         } catch(Exception e) {
-            System.out.println("ERROR !!!");
+            LOGGER.severe(ErrorStrings.SERVER_ERROR_UNKNOWN_MESSAGE_TYPE);
             return new Packet[0];
         }
         return new Packet[0];
@@ -106,13 +105,12 @@ public class SudokuMessageHandler {
                 if(client.getCurrSessionId() == null ||
                         (client.getCurrSessionId() != null &&
                         !client.getCurrSessionId().equals(session.getSessionId()))) {
-                    //TODO
-                    System.out.println("remove client: " + client.getName() + " from: " +
-                    session.getSessionId() + " to: ");
                     if(client.getCurrSessionId() == null)
-                        System.out.println(" NONE");
+                        LOGGER.info("remove client: " + client.getName() + " from session: " +
+                                "session.getSessionId()");
                     else
-                        System.out.println(client.getCurrSessionId());
+                        LOGGER.info("tranferring client: " + client.getName() + " from session: " +
+                                "session.getSessionId()" +  " to session: " + client.getCurrSessionId().toString());
                     session.getClientList().remove(client);
                 }
             }
@@ -124,20 +122,18 @@ public class SudokuMessageHandler {
         Session session = TemporaryDB.getInstance().findSession(client.getCurrSessionId());
         if(session == null) {
             //TODO:
-//            System.out.println("creating new session");
+//            LOGGER.info("creating new session in db: " + client.getCurrSessionId());
 //            session = new Session(client.getCurrSession().getSessionId(), client.getCurrSession().getGameType());
 //            session.getClientList().add(client);
 //            TemporaryDB.getInstance().addAndReplaceSession(session);
-            System.out.println("ERROR !");
+            LOGGER.severe(ErrorStrings.SERVER_ERROR_CLIENT_SESSION_NOT_SYNCED_TO_DB);
             return;
         }
 
         LinkedList<Client> clients = session.getClientList();
         if(!clients.contains(client)) {
-            System.out.println("Adding client to a active session");
-            System.out.println("the client is active in :" + client.getCurrSessionId() + " session");
-            System.out.println("Now there is " + clients.size() + " clients in the session");
-            System.out.println("Session id: " + session.getSessionId() + " and client id: " + client.getId());
+            LOGGER.info("Adding client to a active session" + client.getCurrSessionId());
+            LOGGER.info("Now there is " + clients.size() + " clients in the session");
             clients.add(client);
         }
     }
@@ -152,7 +148,7 @@ public class SudokuMessageHandler {
             MessageQueues.getInstance().removeOldQueues();
             for(Session session: TemporaryDB.getInstance().getAllSessions()) {
                 if(session.getClientList().size() == 0) {
-                    System.out.println("removing empty session");
+                    LOGGER.info("removing empty session");
                     TemporaryDB.getInstance().removeSession(session);
                 }
             }

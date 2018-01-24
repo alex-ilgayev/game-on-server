@@ -2,11 +2,113 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="web:war exploded" />
+      <artifact name="web:war" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee70312d-6b3c-4064-9604-ec9a2e16ad3e" name="Default" comment="" />
+    <list default="true" id="ee70312d-6b3c-4064-9604-ec9a2e16ad3e" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/game-on-server.iml" afterPath="$PROJECT_DIR$/game-on-server.iml" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/backend/SendMessageServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/backend/SendMessageServlet.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/backend/controller/MessageQueues.class" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/backend/controller/MessageQueues.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/backend/controller/Settings.class" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/backend/controller/Settings.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/backend/controller/SudokuMessageHandler$1.class" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/backend/controller/SudokuMessageHandler$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/backend/controller/SudokuMessageHandler.class" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/backend/controller/SudokuMessageHandler.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/backend/controller/SudokuServerGameManager.class" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/backend/controller/SudokuServerGameManager.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/backend/controller/TemporaryDB.class" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/backend/controller/TemporaryDB.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/backend/networkingtypes/Packet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/gameon/datatypes/Client$ClientType.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/gameon/datatypes/Client.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/gameon/datatypes/ConnectionStatus.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/gameon/datatypes/DifficultyType.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/gameon/datatypes/GameType.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/gameon/datatypes/ICallback.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/gameon/datatypes/Session.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/gameon/messaging/IMessage.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/gameon/messaging/MessageCompression.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/gameon/messaging/MessageInnerConnectionStatus.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/gameon/messaging/MessageRequestAvailableClients.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/gameon/messaging/MessageRequestJoin.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/gameon/messaging/MessageRequestNewGame.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/gameon/messaging/MessageRequestPollMessageQueue.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/gameon/messaging/MessageRequestSetMove.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/gameon/messaging/MessageRequestSms.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/gameon/messaging/MessageResponseClientList.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/gameon/messaging/MessageResponseSession.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/gameon/messaging/MessageResponseSms.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/gameon/messaging/MessageType.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/gameon/sudoku/SudokuGameData$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/gameon/sudoku/SudokuGameData.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/gameon/sudoku/datatypes/SudokuBoard.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/gameon/sudoku/datatypes/SudokuMove.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/gameon/gameon/sudoku/datatypes/SudokuResultType.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/lib/gson-2.8.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/backend/SendMessageServlet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/backend/controller/MessageQueues.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/backend/controller/Settings.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/backend/controller/SudokuMessageHandler$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/backend/controller/SudokuMessageHandler.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/backend/controller/SudokuServerGameManager.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/backend/controller/TemporaryDB.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/backend/networkingtypes/Packet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/gameon/datatypes/Client$ClientType.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/gameon/datatypes/Client.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/gameon/datatypes/ConnectionStatus.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/gameon/datatypes/DifficultyType.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/gameon/datatypes/GameType.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/gameon/datatypes/ICallback.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/gameon/datatypes/Session.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/gameon/messaging/IMessage.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/gameon/messaging/MessageCompression.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/gameon/messaging/MessageInnerConnectionStatus.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/gameon/messaging/MessageRequestAvailableClients.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/gameon/messaging/MessageRequestJoin.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/gameon/messaging/MessageRequestNewGame.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/gameon/messaging/MessageRequestPollMessageQueue.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/gameon/messaging/MessageRequestSetMove.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/gameon/messaging/MessageRequestSms.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/gameon/messaging/MessageResponseClientList.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/gameon/messaging/MessageResponseSession.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/gameon/messaging/MessageResponseSms.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/gameon/messaging/MessageType.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/gameon/sudoku/SudokuGameData$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/gameon/sudoku/SudokuGameData.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/gameon/sudoku/datatypes/SudokuBoard.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/gameon/sudoku/datatypes/SudokuMove.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/game-on-server/com/gameon/gameon/sudoku/datatypes/SudokuResultType.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/gameon/backend/SendMessageServlet.java" afterPath="$PROJECT_DIR$/src/com/gameon/backend/SendMessageServlet.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/gameon/backend/controller/MessageQueues.java" afterPath="$PROJECT_DIR$/src/com/gameon/backend/controller/MessageQueues.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/gameon/backend/controller/Settings.java" afterPath="$PROJECT_DIR$/src/com/gameon/backend/controller/Settings.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/gameon/backend/controller/SudokuMessageHandler.java" afterPath="$PROJECT_DIR$/src/com/gameon/backend/controller/SudokuMessageHandler.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/gameon/backend/controller/SudokuServerGameManager.java" afterPath="$PROJECT_DIR$/src/com/gameon/backend/controller/SudokuServerGameManager.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/gameon/backend/controller/TemporaryDB.java" afterPath="$PROJECT_DIR$/src/com/gameon/backend/controller/TemporaryDB.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/gameon/backend/networkingtypes/Packet.java" afterPath="$PROJECT_DIR$/src/com/gameon/shared/datatypes/Packet.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/gameon/gameon/datatypes/Client.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/gameon/gameon/datatypes/ConnectionStatus.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/gameon/gameon/datatypes/DifficultyType.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/gameon/gameon/datatypes/GameType.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/gameon/gameon/datatypes/ICallback.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/gameon/gameon/datatypes/Session.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/gameon/gameon/messaging/IMessage.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/gameon/gameon/messaging/MessageCompression.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/gameon/gameon/messaging/MessageInnerConnectionStatus.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/gameon/gameon/messaging/MessageRequestAvailableClients.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/gameon/gameon/messaging/MessageRequestJoin.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/gameon/gameon/messaging/MessageRequestNewGame.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/gameon/gameon/messaging/MessageRequestPollMessageQueue.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/gameon/gameon/messaging/MessageRequestSetMove.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/gameon/gameon/messaging/MessageRequestSms.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/gameon/gameon/messaging/MessageResponseClientList.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/gameon/gameon/messaging/MessageResponseSession.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/gameon/gameon/messaging/MessageResponseSms.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/gameon/gameon/messaging/MessageType.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/gameon/gameon/sudoku/SudokuGameData.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/gameon/gameon/sudoku/datatypes/SudokuBoard.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/gameon/gameon/sudoku/datatypes/SudokuMove.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/gameon/gameon/sudoku/datatypes/SudokuResultType.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/lib/gson-2.8.2.jar" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/gson-2.8.2.jar" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,51 +119,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SendMessageServlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SendMessageServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/gameon/backend/SendMessageServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="58" column="40" lean-forward="false" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
+            <state relative-caret-position="93">
+              <caret line="30" column="6" lean-forward="false" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/gameon/gameon/datatypes/Client.java">
+      <file leaf-file-name="game-on-server.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game-on-server.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="391">
+              <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Packet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/gameon/backend/networkingtypes/Packet.java">
+      <file leaf-file-name="Packet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/gameon/shared/datatypes/Packet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" column="43" lean-forward="false" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SudokuGameData.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/gameon/gameon/sudoku/SudokuGameData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,17 +151,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SudokuServerGameManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/gameon/backend/controller/SudokuServerGameManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>b</find>
+      <find>base</find>
+      <find>print</find>
+      <find>TODO</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -90,10 +180,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/com/gameon/backend/controller/SudokuServerGameManager.java" />
-        <option value="$PROJECT_DIR$/src/com/gameon/backend/controller/Settings.java" />
         <option value="$PROJECT_DIR$/src/com/gameon/backend/networkingtypes/Packet.java" />
+        <option value="$PROJECT_DIR$/src/com/gameon/backend/controller/Settings.java" />
+        <option value="$PROJECT_DIR$/src/com/gameon/shared/datatypes/Packet.java" />
+        <option value="$PROJECT_DIR$/src/com/gameon/backend/controller/ErrorStrings.java" />
+        <option value="$PROJECT_DIR$/src/com/gameon/backend/controller/MessageQueues.java" />
+        <option value="$PROJECT_DIR$/src/com/gameon/backend/controller/SudokuMessageHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/gameon/backend/controller/SudokuServerGameManager.java" />
         <option value="$PROJECT_DIR$/src/com/gameon/backend/SendMessageServlet.java" />
+        <option value="$PROJECT_DIR$/game-on-server.iml" />
       </list>
     </option>
   </component>
@@ -113,38 +208,9 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="alwaysUpdateSnapshots" value="false" />
         <option name="checksumPolicy" value="FAIL" />
         <option name="failureBehavior" value="FAST" />
-        <option name="localRepository" value="" />
-        <option name="mavenHome" value="" />
-        <option name="nonRecursive" value="false" />
-        <option name="outputLevel" value="INFO" />
-        <option name="pluginUpdatePolicy" value="DEFAULT" />
-        <option name="printErrorStackTraces" value="false" />
-        <option name="usePluginRegistry" value="false" />
-        <option name="userSettingsFile" value="" />
-        <option name="workOffline" value="false" />
       </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="createModuleGroups" value="false" />
-        <option name="createModulesForAggregators" value="true" />
-        <option name="dedicatedModuleDir" value="" />
-        <option name="downloadDocsAutomatically" value="false" />
-        <option name="downloadSourcesAutomatically" value="false" />
-        <option name="excludeTargetFolder" value="true" />
-        <option name="generatedSourcesFolder" value="AUTODETECT" />
-        <option name="importAutomatically" value="false" />
-        <option name="keepSourceFolders" value="true" />
-        <option name="lookForNested" value="false" />
-        <option name="updateFoldersOnImportPhase" value="process-resources" />
-        <option name="useMavenOutput" value="true" />
-      </MavenImportingSettings>
-    </option>
-    <option name="enabledProfiles">
-      <list />
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -153,13 +219,16 @@
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
       <showLibraryContents />
-      <hideEmptyPackages />
+      <hideEmptyPackages ProjectPane="false" />
       <abbreviatePackageNames />
       <autoscrollToSource />
       <autoscrollFromSource />
@@ -168,9 +237,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -187,19 +253,78 @@
               <item name="game-on-server" type="b2602c69:ProjectViewProjectNode" />
               <item name="game-on-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game-on-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game-on-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="gameon" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="game-on-server" type="b2602c69:ProjectViewProjectNode" />
               <item name="game-on-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="gameon" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="game-on-server" type="b2602c69:ProjectViewProjectNode" />
               <item name="game-on-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gameon" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game-on-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game-on-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gameon" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game-on-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game-on-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gameon" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="datatypes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game-on-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game-on-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gameon" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game-on-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game-on-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gameon" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
+              <item name="datatypes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game-on-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game-on-server" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game-on-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game-on-server" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="game-on-server" type="b2602c69:ProjectViewProjectNode" />
@@ -210,18 +335,25 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/lib/gson-2.8.2.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/gson-2.8.2.jar!/" />
+    <property name="SearchEverywhereHistoryKey" value="Error&#9;FILE&#9;file://F:/Projects/game-on-server/src/com/gameon/backend/controller/ErrorStrings.java&#10;Packet&#9;FILE&#9;file://F:/Projects/game-on-server/src/com/gameon/backend/networkingtypes/Packet.java" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Projects\game-on-server\web\WEB-INF" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\Projects\game-on-server\src\com\gameon\backend" />
       <recent name="F:\Projects\game-on-server\src\com\gameon\gameon" />
@@ -406,47 +538,48 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1516732749451</updated>
-      <workItem from="1516732754334" duration="7234000" />
+      <workItem from="1516732754334" duration="14034000" />
+      <workItem from="1516786976692" duration="11259000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7234000" />
+    <option name="totallyTimeSpent" value="25293000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3007874" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3007874" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5322835" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24304539" sideWeight="0.49061033" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24304539" sideWeight="0.5093897" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24304539" sideWeight="0.5093897" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -456,14 +589,105 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="5" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>packet.payload</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Base64.getDecoder().decode(&quot;rO0ABXNyADpjb20uZ2FtZW9uLnNoYXJlZC5tZXNzYWdpbmcuTWVzc2FnZVJlcXVlc3RQb2xsTWVzc2FnZVF1ZXVlAAAAAAAAAAECAAJMAAZjbGllbnR0ACRMY29tL2dhbWVvbi9zaGFyZWQvZGF0YXR5cGVzL0NsaWVudDtMAAJpZHQAEExqYXZhL3V0aWwvVVVJRDt4cHNyACJjb20uZ2FtZW9uLnNoYXJlZC5kYXRhdHlwZXMuQ2xpZW50AAAAAAAAAAECAANJAANfaWRMAA5fY3VyclNlc3Npb25JZHEAfgACTAAFX25hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cAAAAh5wdAAHQWxleDU0MnNyAA5qYXZhLnV0aWwuVVVJRLyZA_eYbYUvAgACSgAMbGVhc3RTaWdCaXRzSgALbW9zdFNpZ0JpdHN4cIUD00fHCjRKAS0wRuqaSOk=&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Base64.getDecoder().decode(&quot;rO0ABXNyADpjb20uZ2FtZW9uLnNoYXJlZC5tZXNzYWdpbmcuTWVzc2FnZVJlcXVlc3RQb2xsTWVzc2FnZVF1ZXVlAAAAAAAAAAECAAJMAAZjbGllbnR0ACRMY29tL2dhbWVvbi9zaGFyZWQvZGF0YXR5cGVzL0NsaWVudDtMAAJpZHQAEExqYXZhL3V0aWwvVVVJRDt4cHNyACJjb20uZ2FtZW9uLnNoYXJlZC5kYXRhdHlwZXMuQ2xpZW50AAAAAAAAAAECAANJAANfaWRMAA5fY3VyclNlc3Npb25JZHEAfgACTAAFX25hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cAAAA69wdAAHQWxleDk0M3NyAA5qYXZhLnV0aWwuVVVJRLyZA/eYbYUvAgACSgAMbGVhc3RTaWdCaXRzSgALbW9zdFNpZ0JpdHN4cJv9douXEnZJNfD4TX2NQI8=&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Base64.getDecoder().decode(&quot;rO0ABXNyADpjb20uZ2FtZW9uLnNoYXJlZC5tZXNzYWdpbmcuTWVzc2FnZVJlcXVlc3RQb2xsTWVz c2FnZVF1ZXVlAAAAAAAAAAECAAJMAAZjbGllbnR0ACRMY29tL2dhbWVvbi9zaGFyZWQvZGF0YXR5 cGVzL0NsaWVudDtMAAJpZHQAEExqYXZhL3V0aWwvVVVJRDt4cHNyACJjb20uZ2FtZW9uLnNoYXJl ZC5kYXRhdHlwZXMuQ2xpZW50AAAAAAAAAAECAANJAANfaWRMAA5fY3VyclNlc3Npb25JZHEAfgAC TAAFX25hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cAAAA69wdAAHQWxleDk0M3NyAA5qYXZhLnV0aWwuVVVJRLyZA/eYbYUvAgACSgAMbGVhc3RTaWdCaXRzSgALbW9zdFNpZ0JpdHN4cJv9douXEnZJNfD4TX2NQI8=&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Base64.getDecoder().decode(&quot;rO0ABXNyADpjb20uZ2FtZW9uLnNoYXJlZC5tZXNzYWdpbmcuTWVzc2FnZVJlcXVlc3RQb2xsTWVz c2FnZVF1ZXVlAAAAAAAAAAECAAJMAAZjbGllbnR0ACRMY29tL2dhbWVvbi9zaGFyZWQvZGF0YXR5 cGVzL0NsaWVudDtMAAJpZHQAEExqYXZhL3V0aWwvVVVJRDt4cHNyACJjb20uZ2FtZW9uLnNoYXJl ZC5kYXRhdHlwZXMuQ2xpZW50AAAAAAAAAAECAANJAANfaWRMAA5fY3VyclNlc3Npb25JZHEAfgAC TAAFX25hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cAAAA69wdAAHQWxleDk0M3NyAA5qYXZhLnV0 aWwuVVVJRLyZA/eYbYUvAgACSgAMbGVhc3RTaWdCaXRzSgALbW9zdFNpZ0JpdHN4cJv9douXEnZJ NfD4TX2NQI8=&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Base64.getDecoder().decode(&quot;rO0ABXNyADpjb20uZ2FtZW9uLnNoYXJlZC5tZXNzYWdpbmcuTWVzc2FnZVJlcXVlc3RQb2xsTWVz c2FnZVF1ZXVlAAAAAAAAAAECAAJMAAZjbGllbnR0ACRMY29tL2dhbWVvbi9zaGFyZWQvZGF0YXR5 cGVzL0NsaWVudDtMAAJpZHQAEExqYXZhL3V0aWwvVVVJRDt4cHNyACJjb20uZ2FtZW9uLnNoYXJl ZC5kYXRhdHlwZXMuQ2xpZW50AAAAAAAAAAECAANJAANfaWRMAA5fY3VyclNlc3Npb25JZHEAfgAC TAAFX25hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cAAAA69wdAAHQWxleDk0M3NyAA5qYXZhLnV0 aWwuVVVJRLyZA/eYbYUvAgACSgAMbGVhc3RTaWdCaXRzSgALbW9zdFNpZ0JpdHN4cJv9douXEnZJ NfD4TX2NQI8= &quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Base64.getDecoder().decode(packet.payload)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/gameon/backend/SendMessageServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gameon/backend/controller/TemporaryDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gameon/shared/datatypes/Packet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gameon/shared/messaging/MessageCompression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="56" column="12" lean-forward="false" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gameon/backend/controller/SudokuMessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gameon/shared/datatypes/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -472,7 +696,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gameon/gameon/datatypes/Client.java">
+    <entry file="file://$PROJECT_DIR$/src/com/gameon/shared/sudoku/SudokuGameData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="48" column="9" lean-forward="true" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gameon/shared/datatypes/Client.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -480,53 +714,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gameon/gameon/sudoku/SudokuGameData.java">
+    <entry file="file://$PROJECT_DIR$/src/com/gameon/shared/messaging/MessageCompression.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gameon/backend/controller/SudokuServerGameManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+        <state relative-caret-position="765">
+          <caret line="53" column="20" lean-forward="false" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/gameon/backend/controller/Settings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="263">
+          <caret line="16" column="81" lean-forward="true" selection-start-line="16" selection-start-column="81" selection-end-line="16" selection-end-column="81" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game-on-server.iml">
+    <entry file="file://$PROJECT_DIR$/src/com/gameon/backend/controller/ErrorStrings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        <state relative-caret-position="204">
+          <caret line="12" column="96" lean-forward="false" selection-start-line="12" selection-start-column="96" selection-end-line="12" selection-end-column="96" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gameon/backend/networkingtypes/Packet.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/Base64.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="43" lean-forward="false" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+        <state relative-caret-position="296">
+          <caret line="498" column="16" lean-forward="true" selection-start-line="498" selection-start-column="16" selection-end-line="498" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gameon/shared/messaging/MessageRequestPollMessageQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#548#549#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gameon/backend/controller/MessageQueues.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <element signature="e#1700#1708#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gameon/backend/controller/TemporaryDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gameon/backend/controller/SudokuMessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="23" column="79" lean-forward="false" selection-start-line="23" selection-start-column="79" selection-end-line="23" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gameon/backend/controller/SudokuServerGameManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="88" column="35" lean-forward="true" selection-start-line="88" selection-start-column="35" selection-end-line="88" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/gameon/backend/SendMessageServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="58" column="40" lean-forward="false" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
+        <state relative-caret-position="93">
+          <caret line="30" column="6" lean-forward="false" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-on-server.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gameon/shared/datatypes/Packet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
